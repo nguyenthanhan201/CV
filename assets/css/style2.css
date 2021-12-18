@@ -57,7 +57,7 @@
   text-decoration: none;
 }
 #header .profile .social-links a:nth-child(3):hover {
-  background: #d67391;
+  background: #000000;
   color: #fff;
   text-decoration: none;
 }
@@ -109,24 +109,24 @@
   transition: 0.3s;
   font-size: 15px;
 }
-.nav-menu a i{
+.nav-menu a i {
   font-size: 24px;
   padding-right: 8px;
   color: #6f7180;
 }
 .nav-menu a:hover,
 .nav-menu a.active > a,
-.nav-menu li:hover > a{
+.nav-menu li:hover > a {
   text-decoration: none;
   color: #fff;
 }
 .nav-menu a:hover i,
 .nav-menu .active > a i,
-.nav-menu li:hover > a i{
+.nav-menu li:hover > a i {
   color: var(--bg-main-second);
 }
 /* Mobile Navigation Menu */
-.mobile-nav-toggle{
+.mobile-nav-toggle {
   position: fixed;
   right: 15px;
   top: 15px;
@@ -140,15 +140,83 @@
   cursor: pointer;
   text-align: center;
 }
-.mobile-nav-toggle i{
+.mobile-nav-toggle i {
   color: var(--bg-main-second);
 }
-.mobile-nav-active{
+.mobile-nav-active {
   overflow: hidden;
 }
-.mobile-nav-active #header{
+.mobile-nav-active #header {
   left: 0;
 }
-.mobile-nav-active .mobile-nav-toggle i{
+.mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
+}
+
+/* Hero Section */
+#hero {
+  width: 100%;
+  height: 100vh;
+
+  background: url("../img/hero-bg2.jfif") top center;
+  background-size: cover;
+  object-fit: cover;
+}
+/* before */
+#hero::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  background: rgba(5, 13, 24, 0.3);
+}
+#hero .hero-container {
+  position: relative;
+  z-index: 2;
+
+  min-width: 300px;
+}
+#hero h1 {
+  margin: 0 0 10px 0;
+
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+#hero p {
+  margin-bottom: 50px;
+
+  color: #fff;
+  font-size: 34px;
+  font-family: "Poppins", sans-serif;
+}
+#hero p span {
+  padding-bottom: 4px;
+
+  color: #fff;
+  letter-spacing: 1px;
+  border-bottom: 3px solid var(--bg-main-second);
+}
+/* Responsive-Hero-Section */
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+@media (min-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
