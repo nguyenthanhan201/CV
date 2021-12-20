@@ -48,11 +48,11 @@
           />
           <h1 class="text-light"><a href="index.html">An Nguyen Thanh</a></h1>
           <div class="social-links mt-3 text-center">
-            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-            <a href="#" class="github"><i class="bx bxl-github"></i></a>
-            <a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
-            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://twitter.com/nguynth11878742" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100013086162803" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="https://github.com/NguyenThanhAn201" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+            <a href="https://www.youtube.com/channel/UCATfKpLRBH2T0mdQseMvO4A/featured" target="_blank" class="youtube"><i class="bx bxl-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/an-nguyen-thanh-2a151a202/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
           </div>
         </div>
         <!-- Navigation Menu-->
@@ -74,13 +74,13 @@
                 ><i class="bx bx-book-content"></i><span>Portfolio</span></a
               >
             </li>
-            <li>
+            <!-- <li>
               <a href="#services"
                 ><i class="bx bx-server"></i><span>Services</span></a
               >
-            </li>
+            </li> -->
             <li>
-              <a href="#scontact"
+              <a href="#contact"
                 ><i class="bx bx-envelope"></i><span>Contact</span></a
               >
             </li>
@@ -286,13 +286,16 @@
       </section>
       <!--  End Skill Section-->
       <!-- Resume Section-->
-      <section id="resume">
+      <section id="resume" class="resume">
         <div class="container">
           <div class="section-title">
             <h2>Resume</h2>
+            <p>
+              My time line about 2 years ago.
+            </p>
           </div>
-          <div class="row" data-aos="fade-up">
-            <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-12" data-aos="fade-up">
               <div class="wrapper">
                 <div class="center-line">
                   <a href="#" class="scroll-icon">
@@ -303,7 +306,9 @@
                   <section class="section-resume">
                     <i class="bx bx-check"></i>
                     <div class="details">
-                      <span class="title">Design Web Ecommerce</span>
+                      <span class="title resume-title"
+                        >Design Web Ecommerce</span
+                      >
                       <span class="date">Nov 2021 - Dec 2021</span>
                     </div>
                     <p>Using: HTML, CSS, ReactJs, Github, Trello.</p>
@@ -313,7 +318,9 @@
                   <section class="section-resume">
                     <i class="bx bx-check"></i>
                     <div class="details">
-                      <span class="title">Design Web WordPress</span>
+                      <span class="title resume-title"
+                        >Design Web WordPress</span
+                      >
                       <span class="date">Oct 2021 - Nov 2021</span>
                     </div>
                     <p>Using: HTMl, CSS, Wordpress, Github, Trello, Plugins.</p>
@@ -323,7 +330,9 @@
                   <section class="section-resume">
                     <i class="bx bx-check"></i>
                     <div class="details">
-                      <span class="title">FrontEnd Developer Inter</span>
+                      <span class="title resume-title"
+                        >FrontEnd Developer Inter</span
+                      >
                       <span class="date">July 2021 - Sep 2021</span>
                     </div>
                     <p>Using: HTML, CSS, Javascript, Github, Trello.</p>
@@ -333,7 +342,7 @@
                   <section class="section-resume">
                     <i class="bx bx-check"></i>
                     <div class="details">
-                      <span class="title">Design Web Movie</span>
+                      <span class="title resume-title">Design Web Movie</span>
                       <span class="date">May 2021 - June 2021</span>
                     </div>
                     <p>
@@ -346,7 +355,9 @@
                   <section class="section-resume">
                     <i class="bx bx-check"></i>
                     <div class="details">
-                      <span class="title">Design Interface Website Pizza</span>
+                      <span class="title resume-title"
+                        >Design Interface Website Pizza</span
+                      >
                       <span class="date">Jan 2021 - Jun 2021</span>
                     </div>
                     <p>
@@ -355,11 +366,11 @@
                     </p>
                   </section>
                 </div>
-                <!-- <div class="row row-2">
+                <div class="row row-2">
                   <section class="section-resume">
                     <i class="bx bx-check"></i>
                     <div class="details">
-                      <span class="title">Design Web Movie</span>
+                      <span class="title resume-title">Design Web Movie</span>
                       <span class="date">May 2021 - June 2021</span>
                     </div>
                     <p>
@@ -367,22 +378,214 @@
                       Bootstrap, Nodejs and some other libraries.
                     </p>
                   </section>
-                </div> -->
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- End Resume Section-->
-      <!-- Portfolio Section -->
-      <section id="portfolio">
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio section-bg">
         <div class="container">
           <div class="section-title">
             <h2>Portfolio</h2>
+            <p>
+              This is my project, i did in around 2 years and i have other
+              project, which have php, sql, c#, java and so on.
+            </p>
+          </div>
+
+          <div class="row" data-aos="fade-up">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-filters">
+                <li data-filter="*" class="filter-active">All</li>
+                <!-- <li data-filter=".filter-app">App</li> -->
+                <li data-filter=".filter-card">ReactJs</li>
+                <li data-filter=".filter-web">WordPress</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="row portfolio-container"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/Project/Screenshot_1.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-links">
+                  <a
+                    href="assets/img/Project/Screenshot_1.png"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Web 3"
+                    ><i class="bx bx-plus"></i
+                  ></a>
+                  <a
+                    href="https://github.com/tailieuweb/training-cms"
+                    target="_blank"
+                    title="More Details"
+                    ><i class="bx bx-link"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/Project/Screenshot_2.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-links">
+                  <a
+                    href="assets/img/Project/Screenshot_2.png"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 2"
+                    ><i class="bx bx-plus"></i
+                  ></a>
+                  <a
+                    href="https://github.com/NguyenThanhAn201/react-entertainment-hub.git"
+                    title="More Details"
+                    target="_blank"
+                    ><i class="bx bx-link"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/Project/Screenshot_5.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-links">
+                  <a
+                    href="assets/img/Project/Screenshot_5.png"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Web 2"
+                    ><i class="bx bx-plus"></i
+                  ></a>
+                  <a
+                    href="https://github.com/tailieuweb/training-cms"
+                    target="_blank"
+                    title="More Details"
+                    ><i class="bx bx-link"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/Project/Screenshot_3.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-links">
+                  <a
+                    href="assets/img/Project/Screenshot_3.png"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 1"
+                    ><i class="bx bx-plus"></i
+                  ></a>
+                  <a
+                    href="https://github.com/NguyenThanhAn201/react-ecommerce-web-shop"
+                    target="_blank"
+                    title="More Details"
+                    ><i class="bx bx-link"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/Project/Screenshot_4.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-links">
+                  <a
+                    href="assets/img/Project/Screenshot_4.png"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 3"
+                    ><i class="bx bx-plus"></i
+                  ></a>
+                  <a
+                    href="https://github.com/NguyenThanhAn201/react-entertainment-hub"
+                    target="_blank"
+                    title="More Details"
+                    ><i class="bx bx-link"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <!-- End Portfolio Section -->
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <p>
+              All my information in here.
+            </p>
+          </div>
+
+          <div class="row" data-aos="fade-up">
+            <div class="col-lg-12 align-items-stretch">
+              <div class="info">
+                <div class="address">
+                  <i class="icofont-google-map"></i>
+                  <h4>Location:</h4>
+                  <!-- <p>M108 Street, Kolkata, WB 723453</p> -->
+                  <p>19 Street, 5 Quarter, Binh Chieu Ward , Thu Duc City </p>
+                </div>
+
+                <div class="email">
+                  <i class="icofont-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>fxannguyen201@gmail.com</p>
+                </div>
+
+                <div class="phone">
+                  <i class="icofont-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+84 932795437</p>
+                </div>
+
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.1469182476444!2d106.74430671533459!3d10.876428160312633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d80ad7c8218b%3A0x9111d8fd8f7a62dd!2zQ2jhu6MgS2hp4bq_dCBUw6Jt!5e0!3m2!1svi!2s!4v1639989866904!5m2!1svi!2s"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
     </main>
   </body>
   <!-- Vendor JS Files -->

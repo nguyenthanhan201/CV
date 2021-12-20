@@ -3,7 +3,7 @@
   --bg-main-second: #149ddd;
   --txt-color: #a8a9b4;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 #header {
@@ -228,6 +228,9 @@ section {
   padding: 60px 0;
   overflow: hidden;
 }
+.section-bg {
+  background: #f5f8fd;
+}
 .section-title h2 {
   position: relative;
 
@@ -407,29 +410,196 @@ section {
   font-weight: 600;
   color: var(--bg-main-second);
 }
-.row .section-resume .details .date{
+.row .section-resume .details .date {
   color: #7f8c8d;
 }
 .row .section-resume p {
   margin: 10px 0 17px 0;
 }
-@media(max-width:772px){
-  .wrapper .center-line{
+@media (max-width: 772px) {
+  .wrapper .center-line {
     left: 30px;
   }
-  .wrapper .row{
+  .wrapper .row {
     margin: 30px 0 3px 60px;
   }
-  .wrapper .row .section-resume{
+  .wrapper .row .section-resume {
     width: 100%;
   }
-  .row-1 .section-resume::before{
+  .row-1 .section-resume::before {
     left: -7px;
   }
-  .row-1 .section-resume i{
+  .row-1 .section-resume i {
     left: -73px;
   }
   .row-2 .section-resume i {
     left: -73px;
+  }
 }
+/* Portfolio Section */
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+.portfolio #portfolio-filters {
+  margin: 0 auto 35px auto;
+  border-radius: 50px;
+  padding: 2px 15px;
+
+  list-style: none;
+  text-align: center;
+  background: #fff;
+}
+.portfolio #portfolio-filters li {
+  display: inline-block;
+
+  padding: 10px 15px 8px 15px;
+  margin-bottom: 5px;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #272829;
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.portfolio #portfolio-filters li:hover,
+.portfolio #portfolio-filters li.filter-active {
+  color: #149ddd;
+}
+.portfolio #portfolio-filters li:last-child {
+  margin-right: 0;
+}
+.portfolio .portfolio-wrap {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  transition: 0.3s;
+}
+.portfolio .portfolio-wrap::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  transition: all ease-in-out 0.3s;
+  opacity: 0;
+}
+.portfolio .portfolio-wrap .portfolio-links {
+  left: 0;
+  right: 0;
+  bottom: -60px;
+  z-index: 3;
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+
+  transition: all ease-in-out 0.3s;
+  opacity: 1;
+}
+.portfolio .portfolio-wrap .portfolio-links a {
+  width: 50%;
+
+  color: #fff;
+  font-size: 28px;
+  text-align: center;
+  background: rgba(20, 157, 221, 0.75);
+
+  transition: 0.3s;
+}
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  background: rgba(20, 157, 221, 0.95);
+}
+
+.portfolio .portfolio-wrap .portfolio-links a + a {
+  border-left: 1px solid #37b3ed;
+}
+.portfolio .portfolio-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-links {
+  opacity: 1;
+  bottom: 0;
+}
+/* Contact */
+.contact {
+  padding-bottom: 130px;
+}
+
+.contact .info {
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #149ddd;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #dff3fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #050d18;
+}
+
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #173b6c;
+}
+
+.contact .info .email p {
+  padding-top: 5px;
+}
+
+.contact .info .social-links {
+  padding-left: 60px;
+}
+
+.contact .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.contact .info .social-links a:hover {
+  background: #149ddd;
+  color: #fff;
 }
